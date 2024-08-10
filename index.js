@@ -5,7 +5,7 @@ const port = 3000;
 const connectToMongoDB = require("./db");
 connectToMongoDB();
 app.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "https://foodies-backend-6kl3.onrender.com");
+    res.setHeader("Access-Control-Allow-Origin", "https://foodiesdmr.vercel.app");
     res.header(
         "Access-Control-Allow-Headers",
         "Origin,X-Requested-With,Content-type,Accept"
